@@ -26,7 +26,19 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px 15px;
-    gap: 15px;
+    gap: 12px;
+}
+
+/* Estilos del Banner Superior con bordes redondeados y sin interacción */
+.banner-superior {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    pointer-events: none; /* Impide que el usuario lo toque, seleccione o arrastre */
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .candidato-tarjeta {
@@ -78,14 +90,14 @@ body {
 }
 
 .div-logo-central {
-    margin: 10px 0;
+    margin: 8px 0;
     display: flex;
     justify-content: center;
 }
 
 .logo-central {
-    width: 140px;
-    max-width: 38vw;
+    width: 130px;
+    max-width: 35vw;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
@@ -269,6 +281,10 @@ body {
 }
 
 @media (max-width: 390px) {
+    .banner-superior {
+        max-width: 380px;
+    }
+
     .cabecera-candidato {
         max-width: 340px;
         gap: 2px;
@@ -291,4 +307,4 @@ body {
         width: 24px;
         height: 24px;
     }
-}
+        }
