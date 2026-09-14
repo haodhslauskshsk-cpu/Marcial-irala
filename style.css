@@ -1,7 +1,3 @@
-/* ==========================================
-   CONFIGURACIÓN GENERAL
-========================================== */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,11 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/* ==========================================
-   PÁGINA PRINCIPAL / PORTADA
-========================================== */
-
 .inicio {
     background: #ffffff;
 }
@@ -35,13 +26,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px 15px;
-    gap: 8px;
+    gap: 15px;
 }
-
-
-/* ==========================================
-   CONTENEDOR DE AFICHE Y CAPAS (PORTADA)
-========================================== */
 
 .candidato-tarjeta {
     width: 100%;
@@ -65,18 +51,14 @@ body {
     justify-content: flex-end;
 }
 
-/* Fotos en Portada */
 .foto-candidato {
     height: auto;
     display: block;
     object-fit: contain;
-    
-    /* EFECTO DIFUMINADO ABAJO */
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* Nombres superpuestos en Portada */
 .nombre-candidato {
     position: absolute;
     height: auto;
@@ -84,59 +66,30 @@ body {
     filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
 }
 
-
-/* ------------------------------------------
-   MARCIAL EN PORTADA
------------------------------------------- */
 .foto-marcial-portada {
-    width: 260px;
-    max-width: 80vw;
+    width: 280px;
+    max-width: 85vw;
 }
 
 .nombre-marcial-portada {
-    width: 62%;
-    max-width: 220px;
+    width: 65%;
+    max-width: 240px;
     bottom: 0px;
 }
 
-
-/* ------------------------------------------
-   MÓNICA EN PORTADA
------------------------------------------- */
-.foto-monica-portada {
-    width: 640px;
-    max-width: 98vw;
-}
-
-.nombre-monica-portada {
-    width: 45%;
-    max-width: 220px;
-    bottom: -2px;
-}
-
-
-/* ==========================================
-   LOGO CENTRAL ALIANZA
-========================================== */
-
 .div-logo-central {
-    margin: 4px 0;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
 }
 
 .logo-central {
-    width: 130px;
-    max-width: 34vw;
+    width: 140px;
+    max-width: 38vw;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
 }
-
-
-/* ==========================================
-   PÁGINAS INDIVIDUALES (MARCIAL Y MÓNICA)
-========================================== */
 
 .pagina-candidato {
     min-height: 100vh;
@@ -146,23 +99,13 @@ body {
     align-items: center;
 }
 
-/* Fondos temáticos */
 .pagina-marcial {
     background: linear-gradient(180deg, #d9c8e8 0%, #bd9ee0 100%);
 }
 
-.pagina-monica {
-    background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
-}
-
-
-/* ==========================================
-   CABECERA TRÍPTICO
-========================================== */
-
 .cabecera-candidato {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -183,7 +126,7 @@ body {
 .centro-afiche {
     position: relative;
     width: 62%;
-    max-width: 270px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,8 +136,6 @@ body {
     height: auto;
     display: block;
     object-fit: contain;
-
-    /* DIFUMINADO INFERIOR */
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
@@ -206,20 +147,6 @@ body {
     filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.5));
 }
 
-
-/* ------------------------------------------
-   MÓNICA EN PÁGINA SECUNDARIA (ACHICADA 2 VECES)
------------------------------------------- */
-.foto-monica-pagina {
-    width: 130%; /* Tamaño ajustado y equilibrado */
-    max-width: 400px;
-}
-
-.nombre-monica-pagina {
-    width: 60%;
-    bottom: -5px;
-}
-
 .foto-marcial-pagina {
     width: 100%;
 }
@@ -228,11 +155,6 @@ body {
     width: 95%;
     bottom: -5px;
 }
-
-
-/* ==========================================
-   REDES SOCIALES CON ICONOS REALES
-========================================== */
 
 .redes {
     display: flex;
@@ -271,11 +193,6 @@ body {
     height: 28px;
     object-fit: contain;
 }
-
-
-/* ==========================================
-   TARJETA DE INFORMACIÓN GLASSMORPHISM
-========================================== */
 
 .informacion {
     width: 100%;
@@ -333,11 +250,6 @@ body {
     font-weight: 700;
 }
 
-
-/* ==========================================
-   BOTÓN VOLVER
-========================================== */
-
 .volver {
     display: inline-block;
     margin: 20px auto 10px;
@@ -355,11 +267,6 @@ body {
 .volver:active {
     transform: scale(0.95);
 }
-
-
-/* ==========================================
-   RESPONSIVO MÓVIL
-========================================== */
 
 @media (max-width: 390px) {
     .cabecera-candidato {
